@@ -1,0 +1,659 @@
+{
+  "data": {
+    "n_train": 9526,
+    "n_test": 4085,
+    "classes": [
+      "BARBUNYA",
+      "BOMBAY",
+      "CALI",
+      "DERMASON",
+      "HOROZ",
+      "SEKER",
+      "SIRA"
+    ]
+  },
+  "cv_table": [
+    {
+      "model": "GaussianNB",
+      "family": "生成式/贝叶斯",
+      "n_features": 16,
+      "cv_mean": 0.896598887888227,
+      "cv_std": 0.007218911273168608,
+      "seconds": 0.0
+    },
+    {
+      "model": "LDA",
+      "family": "线性判别",
+      "n_features": 16,
+      "cv_mean": 0.9044719672370439,
+      "cv_std": 0.005495575610586156,
+      "seconds": 0.1
+    },
+    {
+      "model": "QDA",
+      "family": "二次判别",
+      "n_features": 16,
+      "cv_mean": 0.9194834932097287,
+      "cv_std": 0.005421173900455423,
+      "seconds": 0.1
+    },
+    {
+      "model": "kNN_k15",
+      "family": "近邻",
+      "n_features": 16,
+      "cv_mean": 0.9243125039590409,
+      "cv_std": 0.00532506506313464,
+      "seconds": 0.4
+    },
+    {
+      "model": "LogisticReg",
+      "family": "线性判别",
+      "n_features": 16,
+      "cv_mean": 0.9227379762209683,
+      "cv_std": 0.0032376403996908485,
+      "seconds": 0.2
+    },
+    {
+      "model": "SVC_rbf",
+      "family": "核方法",
+      "n_features": 16,
+      "cv_mean": 0.9297714359681954,
+      "cv_std": 0.004238960093599724,
+      "seconds": 3.7
+    },
+    {
+      "model": "RandomForest",
+      "family": "树集成",
+      "n_features": 16,
+      "cv_mean": 0.9229476194804086,
+      "cv_std": 0.003034452224440173,
+      "seconds": 6.4
+    },
+    {
+      "model": "ExtraTrees",
+      "family": "树集成",
+      "n_features": 16,
+      "cv_mean": 0.9191677614275131,
+      "cv_std": 0.005176353878751242,
+      "seconds": 2.0
+    },
+    {
+      "model": "HistGB",
+      "family": "树集成",
+      "n_features": 16,
+      "cv_mean": 0.9254674146843922,
+      "cv_std": 0.003212268264886319,
+      "seconds": 51.3
+    },
+    {
+      "model": "RandomForest_ENG",
+      "family": "树集成",
+      "n_features": 27,
+      "cv_mean": 0.9243125590413473,
+      "cv_std": 0.0032390864123211134,
+      "seconds": 8.2
+    },
+    {
+      "model": "ExtraTrees_ENG",
+      "family": "树集成",
+      "n_features": 27,
+      "cv_mean": 0.9252565045318969,
+      "cv_std": 0.004218429809138535,
+      "seconds": 2.0
+    },
+    {
+      "model": "HistGB_ENG",
+      "family": "树集成",
+      "n_features": 27,
+      "cv_mean": 0.9250477976716709,
+      "cv_std": 0.0035382881876903902,
+      "seconds": 52.0
+    },
+    {
+      "model": "SVC_ENG",
+      "family": "核方法",
+      "n_features": 27,
+      "cv_mean": 0.9304014123103446,
+      "cv_std": 0.0038007368076398073,
+      "seconds": 4.8
+    },
+    {
+      "model": "SVC_LEAN",
+      "family": "核方法",
+      "n_features": 11,
+      "cv_mean": 0.9300866720096505,
+      "cv_std": 0.004897233624608694,
+      "seconds": 3.7
+    },
+    {
+      "model": "SVC_C1",
+      "family": "核方法",
+      "n_features": 16,
+      "cv_mean": 0.928512089189271,
+      "cv_std": 0.004545897175182517,
+      "seconds": 3.8
+    },
+    {
+      "model": "SVC_C100",
+      "family": "核方法",
+      "n_features": 16,
+      "cv_mean": 0.9297716562974225,
+      "cv_std": 0.0038818464304510424,
+      "seconds": 5.1
+    },
+    {
+      "model": "kNN_k5",
+      "family": "近邻",
+      "n_features": 16,
+      "cv_mean": 0.922947729645022,
+      "cv_std": 0.004826964517540457,
+      "seconds": 0.3
+    },
+    {
+      "model": "kNN_k9",
+      "family": "近邻",
+      "n_features": 16,
+      "cv_mean": 0.9233677322338906,
+      "cv_std": 0.0053414193845618555,
+      "seconds": 0.1
+    },
+    {
+      "model": "kNN_k25",
+      "family": "近邻",
+      "n_features": 16,
+      "cv_mean": 0.9222124910146988,
+      "cv_std": 0.0057497433692578785,
+      "seconds": 0.1
+    },
+    {
+      "model": "HistGB_leaf63",
+      "family": "树集成",
+      "n_features": 27,
+      "cv_mean": 0.9266223254097434,
+      "cv_std": 0.004597486518985958,
+      "seconds": 93.2
+    },
+    {
+      "model": "SoftVoting",
+      "family": "集成",
+      "n_features": 27,
+      "cv_mean": 0.9297712156389686,
+      "cv_std": 0.00421672326577735,
+      "seconds": 0.0
+    }
+  ],
+  "test_table": [
+    {
+      "model": "GaussianNB",
+      "family": "生成式/贝叶斯",
+      "cv_mean": 0.896598887888227,
+      "test_acc": 0.8984088127294981,
+      "gap_pp": -0.181,
+      "n_features": 16,
+      "seconds": 0.0
+    },
+    {
+      "model": "LDA",
+      "family": "线性判别",
+      "cv_mean": 0.9044719672370439,
+      "test_acc": 0.9008567931456548,
+      "gap_pp": 0.362,
+      "n_features": 16,
+      "seconds": 0.1
+    },
+    {
+      "model": "QDA",
+      "family": "二次判别",
+      "cv_mean": 0.9194834932097287,
+      "test_acc": 0.9231334149326805,
+      "gap_pp": -0.365,
+      "n_features": 16,
+      "seconds": 0.1
+    },
+    {
+      "model": "kNN_k15",
+      "family": "近邻",
+      "cv_mean": 0.9243125039590409,
+      "test_acc": 0.9231334149326805,
+      "gap_pp": 0.118,
+      "n_features": 16,
+      "seconds": 0.4
+    },
+    {
+      "model": "LogisticReg",
+      "family": "线性判别",
+      "cv_mean": 0.9227379762209683,
+      "test_acc": 0.9277845777233782,
+      "gap_pp": -0.505,
+      "n_features": 16,
+      "seconds": 0.2
+    },
+    {
+      "model": "SVC_rbf",
+      "family": "核方法",
+      "cv_mean": 0.9297714359681954,
+      "test_acc": 0.9336597307221542,
+      "gap_pp": -0.389,
+      "n_features": 16,
+      "seconds": 3.7
+    },
+    {
+      "model": "RandomForest",
+      "family": "树集成",
+      "cv_mean": 0.9229476194804086,
+      "test_acc": 0.9216646266829865,
+      "gap_pp": 0.128,
+      "n_features": 16,
+      "seconds": 6.4
+    },
+    {
+      "model": "ExtraTrees",
+      "family": "树集成",
+      "cv_mean": 0.9191677614275131,
+      "test_acc": 0.9216646266829865,
+      "gap_pp": -0.25,
+      "n_features": 16,
+      "seconds": 2.0
+    },
+    {
+      "model": "HistGB",
+      "family": "树集成",
+      "cv_mean": 0.9254674146843922,
+      "test_acc": 0.9221542227662178,
+      "gap_pp": 0.331,
+      "n_features": 16,
+      "seconds": 51.3
+    },
+    {
+      "model": "RandomForest_ENG",
+      "family": "树集成",
+      "cv_mean": 0.9243125590413473,
+      "test_acc": 0.9250917992656059,
+      "gap_pp": -0.078,
+      "n_features": 27,
+      "seconds": 8.2
+    },
+    {
+      "model": "ExtraTrees_ENG",
+      "family": "树集成",
+      "cv_mean": 0.9252565045318969,
+      "test_acc": 0.9221542227662178,
+      "gap_pp": 0.31,
+      "n_features": 27,
+      "seconds": 2.0
+    },
+    {
+      "model": "HistGB_ENG",
+      "family": "树集成",
+      "cv_mean": 0.9250477976716709,
+      "test_acc": 0.9223990208078335,
+      "gap_pp": 0.265,
+      "n_features": 27,
+      "seconds": 52.0
+    },
+    {
+      "model": "SVC_ENG",
+      "family": "核方法",
+      "cv_mean": 0.9304014123103446,
+      "test_acc": 0.9329253365973073,
+      "gap_pp": -0.252,
+      "n_features": 27,
+      "seconds": 4.8
+    },
+    {
+      "model": "SVC_LEAN",
+      "family": "核方法",
+      "cv_mean": 0.9300866720096505,
+      "test_acc": 0.9324357405140759,
+      "gap_pp": -0.235,
+      "n_features": 11,
+      "seconds": 3.7
+    },
+    {
+      "model": "SVC_C1",
+      "family": "核方法",
+      "cv_mean": 0.928512089189271,
+      "test_acc": 0.9294981640146879,
+      "gap_pp": -0.099,
+      "n_features": 16,
+      "seconds": 3.8
+    },
+    {
+      "model": "SVC_C100",
+      "family": "核方法",
+      "cv_mean": 0.9297716562974225,
+      "test_acc": 0.9326805385556916,
+      "gap_pp": -0.291,
+      "n_features": 16,
+      "seconds": 5.1
+    },
+    {
+      "model": "kNN_k5",
+      "family": "近邻",
+      "cv_mean": 0.922947729645022,
+      "test_acc": 0.9204406364749081,
+      "gap_pp": 0.251,
+      "n_features": 16,
+      "seconds": 0.3
+    },
+    {
+      "model": "kNN_k9",
+      "family": "近邻",
+      "cv_mean": 0.9233677322338906,
+      "test_acc": 0.9223990208078335,
+      "gap_pp": 0.097,
+      "n_features": 16,
+      "seconds": 0.1
+    },
+    {
+      "model": "kNN_k25",
+      "family": "近邻",
+      "cv_mean": 0.9222124910146988,
+      "test_acc": 0.9270501835985312,
+      "gap_pp": -0.484,
+      "n_features": 16,
+      "seconds": 0.1
+    },
+    {
+      "model": "HistGB_leaf63",
+      "family": "树集成",
+      "cv_mean": 0.9266223254097434,
+      "test_acc": 0.9246022031823745,
+      "gap_pp": 0.202,
+      "n_features": 27,
+      "seconds": 93.2
+    },
+    {
+      "model": "SoftVoting",
+      "family": "集成",
+      "cv_mean": 0.9297712156389686,
+      "test_acc": 0.9297429620563036,
+      "gap_pp": 0.003,
+      "n_features": 27,
+      "seconds": 0.0
+    }
+  ],
+  "best": {
+    "name": "SVC_ENG",
+    "features": [
+      "Area",
+      "Perimeter",
+      "MajorAxisLength",
+      "MinorAxisLength",
+      "AspectRation",
+      "Eccentricity",
+      "ConvexArea",
+      "EquivDiameter",
+      "Extent",
+      "Solidity",
+      "roundness",
+      "Compactness",
+      "ShapeFactor1",
+      "ShapeFactor2",
+      "ShapeFactor3",
+      "ShapeFactor4",
+      "solidity2",
+      "roundness2",
+      "compactness2",
+      "aspect2",
+      "major_per_P",
+      "minor_per_P",
+      "eqd_per_P",
+      "area_per_majmin",
+      "sf3_alt",
+      "log_area",
+      "log_perimeter"
+    ],
+    "cv_mean": 0.9304014123103446,
+    "test_acc": 0.9329253365973073,
+    "report": {
+      "BARBUNYA": {
+        "precision": 0.9522546419098143,
+        "recall": 0.9042821158690176,
+        "f1-score": 0.9276485788113695,
+        "support": 397.0
+      },
+      "BOMBAY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 157.0
+      },
+      "CALI": {
+        "precision": 0.9264413518886679,
+        "recall": 0.9529652351738241,
+        "f1-score": 0.9395161290322581,
+        "support": 489.0
+      },
+      "DERMASON": {
+        "precision": 0.9254426840633737,
+        "recall": 0.9332706766917294,
+        "f1-score": 0.9293401965372017,
+        "support": 1064.0
+      },
+      "HOROZ": {
+        "precision": 0.968141592920354,
+        "recall": 0.9463667820069204,
+        "f1-score": 0.9571303587051618,
+        "support": 578.0
+      },
+      "SEKER": {
+        "precision": 0.9512987012987013,
+        "recall": 0.9622331691297209,
+        "f1-score": 0.9567346938775511,
+        "support": 609.0
+      },
+      "SIRA": {
+        "precision": 0.8853904282115869,
+        "recall": 0.888748419721871,
+        "f1-score": 0.8870662460567823,
+        "support": 791.0
+      },
+      "accuracy": 0.9329253365973073,
+      "macro avg": {
+        "precision": 0.9441384857560713,
+        "recall": 0.9411237712275834,
+        "f1-score": 0.9424908861457606,
+        "support": 4085.0
+      },
+      "weighted avg": {
+        "precision": 0.9331741758309482,
+        "recall": 0.9329253365973073,
+        "f1-score": 0.9329400290169882,
+        "support": 4085.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        359,
+        0,
+        19,
+        0,
+        1,
+        3,
+        15
+      ],
+      [
+        0,
+        157,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        466,
+        0,
+        9,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        993,
+        0,
+        19,
+        52
+      ],
+      [
+        2,
+        0,
+        15,
+        7,
+        547,
+        0,
+        7
+      ],
+      [
+        3,
+        0,
+        0,
+        7,
+        0,
+        586,
+        13
+      ],
+      [
+        3,
+        0,
+        3,
+        66,
+        8,
+        8,
+        703
+      ]
+    ],
+    "labels": [
+      "BARBUNYA",
+      "BOMBAY",
+      "CALI",
+      "DERMASON",
+      "HOROZ",
+      "SEKER",
+      "SIRA"
+    ],
+    "mean_max_prob": 0.9275167894922697,
+    "log_loss": 0.18783988677817098
+  },
+  "second_best": {
+    "name": "SVC_LEAN",
+    "test_acc": 0.9324357405140759,
+    "agreement_with_best": 0.9916768665850674
+  },
+  "rf_importance": [
+    {
+      "feature": "ShapeFactor3",
+      "importance": 0.07316470247150977
+    },
+    {
+      "feature": "Compactness",
+      "importance": 0.06982980564653374
+    },
+    {
+      "feature": "Perimeter",
+      "importance": 0.06876718377920102
+    },
+    {
+      "feature": "log_perimeter",
+      "importance": 0.0677386509659847
+    },
+    {
+      "feature": "ShapeFactor1",
+      "importance": 0.06317258158775518
+    },
+    {
+      "feature": "MinorAxisLength",
+      "importance": 0.05913404147135741
+    },
+    {
+      "feature": "ConvexArea",
+      "importance": 0.05716376793160323
+    },
+    {
+      "feature": "MajorAxisLength",
+      "importance": 0.05073908260561722
+    },
+    {
+      "feature": "major_per_P",
+      "importance": 0.04892866600928212
+    },
+    {
+      "feature": "Eccentricity",
+      "importance": 0.04537739524280662
+    },
+    {
+      "feature": "AspectRation",
+      "importance": 0.04514094692943742
+    },
+    {
+      "feature": "aspect2",
+      "importance": 0.04386406101425296
+    },
+    {
+      "feature": "Area",
+      "importance": 0.042506228175519876
+    },
+    {
+      "feature": "log_area",
+      "importance": 0.0409715921767375
+    },
+    {
+      "feature": "EquivDiameter",
+      "importance": 0.0388611924615333
+    },
+    {
+      "feature": "minor_per_P",
+      "importance": 0.0313499111885044
+    },
+    {
+      "feature": "ShapeFactor2",
+      "importance": 0.027462460896366267
+    },
+    {
+      "feature": "compactness2",
+      "importance": 0.017246373852650557
+    },
+    {
+      "feature": "eqd_per_P",
+      "importance": 0.017092012851852884
+    },
+    {
+      "feature": "roundness",
+      "importance": 0.017074422609114848
+    },
+    {
+      "feature": "roundness2",
+      "importance": 0.016714152652898814
+    },
+    {
+      "feature": "area_per_majmin",
+      "importance": 0.014665087412903443
+    },
+    {
+      "feature": "ShapeFactor4",
+      "importance": 0.014629942084042565
+    },
+    {
+      "feature": "solidity2",
+      "importance": 0.0073068596152863164
+    },
+    {
+      "feature": "Solidity",
+      "importance": 0.007265002708809071
+    },
+    {
+      "feature": "sf3_alt",
+      "importance": 0.007262259777484258
+    },
+    {
+      "feature": "Extent",
+      "importance": 0.006571615880954498
+    }
+  ],
+  "elapsed_seconds": 287.6
+}

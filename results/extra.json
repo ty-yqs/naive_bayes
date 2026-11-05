@@ -1,0 +1,185 @@
+{
+  "zero_cells_full": {
+    "total_cells": 336,
+    "zero_cells": 39,
+    "zero_fraction": 0.11607142857142858,
+    "per_class": {
+      "BARBUNYA": {
+        "zero_cells": 5,
+        "cells": 48,
+        "n_samples": 925
+      },
+      "BOMBAY": {
+        "zero_cells": 16,
+        "cells": 48,
+        "n_samples": 365
+      },
+      "CALI": {
+        "zero_cells": 5,
+        "cells": 48,
+        "n_samples": 1141
+      },
+      "DERMASON": {
+        "zero_cells": 6,
+        "cells": 48,
+        "n_samples": 2482
+      },
+      "HOROZ": {
+        "zero_cells": 5,
+        "cells": 48,
+        "n_samples": 1350
+      },
+      "SEKER": {
+        "zero_cells": 2,
+        "cells": 48,
+        "n_samples": 1418
+      },
+      "SIRA": {
+        "zero_cells": 0,
+        "cells": 48,
+        "n_samples": 1845
+      }
+    }
+  },
+  "zero_cells_1000": {
+    "total_cells": 336,
+    "zero_cells": 56,
+    "zero_fraction": 0.16666666666666666,
+    "per_class": {
+      "BARBUNYA": {
+        "zero_cells": 8,
+        "cells": 48,
+        "n_samples": 97
+      },
+      "BOMBAY": {
+        "zero_cells": 18,
+        "cells": 48,
+        "n_samples": 38
+      },
+      "CALI": {
+        "zero_cells": 9,
+        "cells": 48,
+        "n_samples": 120
+      },
+      "DERMASON": {
+        "zero_cells": 8,
+        "cells": 48,
+        "n_samples": 260
+      },
+      "HOROZ": {
+        "zero_cells": 7,
+        "cells": 48,
+        "n_samples": 142
+      },
+      "SEKER": {
+        "zero_cells": 6,
+        "cells": 48,
+        "n_samples": 149
+      },
+      "SIRA": {
+        "zero_cells": 0,
+        "cells": 48,
+        "n_samples": 194
+      }
+    }
+  },
+  "alpha_by_n": [
+    {
+      "n": 20,
+      "alpha0.0": 0.6489290085679315,
+      "alpha1.0": 0.6927172582619339
+    },
+    {
+      "n": 30,
+      "alpha0.0": 0.6918115055079559,
+      "alpha1.0": 0.7331823745410038
+    },
+    {
+      "n": 50,
+      "alpha0.0": 0.7545532435740514,
+      "alpha1.0": 0.7789106487148103
+    },
+    {
+      "n": 100,
+      "alpha0.0": 0.8055569155446756,
+      "alpha1.0": 0.8123806609547124
+    },
+    {
+      "n": 200,
+      "alpha0.0": 0.8261077111383109,
+      "alpha1.0": 0.828421052631579
+    },
+    {
+      "n": 500,
+      "alpha0.0": 0.834265605875153,
+      "alpha1.0": 0.8339718482252142
+    },
+    {
+      "n": 1000,
+      "alpha0.0": 0.8343757649938801,
+      "alpha1.0": 0.8354834761321911
+    },
+    {
+      "n": 2000,
+      "alpha0.0": 0.8362178702570379,
+      "alpha1.0": 0.8361627906976743
+    },
+    {
+      "n": 9526,
+      "alpha0.0": 0.8386780905752754,
+      "alpha1.0": 0.8386780905752754
+    }
+  ],
+  "disagreement": {
+    "n_test": 4085,
+    "n_differ": 61,
+    "frac_differ": 0.014932680538555692,
+    "full_right_1k_wrong": 36,
+    "full_wrong_1k_right": 17,
+    "both_wrong": 642
+  },
+  "calibration": {
+    "full": {
+      "accuracy": 0.8386780905752754,
+      "mean_max_prob": 0.9760234196188328,
+      "frac_conf_above_099": 0.811750305997552,
+      "acc_when_conf_above_099": 0.8986731001206273
+    },
+    "1000": {
+      "accuracy": 0.8340269277845778,
+      "mean_max_prob": 0.9705138915338838
+    }
+  },
+  "state_space": [
+    {
+      "m": 2,
+      "K": 9,
+      "params_full": 56,
+      "params_nb": 34
+    },
+    {
+      "m": 4,
+      "K": 81,
+      "params_full": 560,
+      "params_nb": 62
+    },
+    {
+      "m": 8,
+      "K": 6561,
+      "params_full": 45920,
+      "params_nb": 118
+    },
+    {
+      "m": 12,
+      "K": 531441,
+      "params_full": 3720080,
+      "params_nb": 174
+    },
+    {
+      "m": 16,
+      "K": 43046721,
+      "params_full": 301327040,
+      "params_nb": 230
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "data": {
+    "n_train": 9526,
+    "n_small": 1000,
+    "n_test": 4085,
+    "train_test_id_intersection": 0,
+    "small_is_subset": true,
+    "missing_values": 0
+  },
+  "binning": {
+    "method": "training order statistics, right-closed intervals",
+    "all_16_features_match_all_13611_rows": true,
+    "cutpoints": {
+      "Area": [
+        38923.0,
+        53381.0
+      ],
+      "Perimeter": [
+        730.217,
+        910.43
+      ],
+      "MajorAxisLength": [
+        265.1217787999718,
+        354.3024895923935
+      ],
+      "MinorAxisLength": [
+        182.2267304946595,
+        203.53421749825384
+      ],
+      "AspectRation": [
+        1.4765078789393318,
+        1.639547840324037
+      ],
+      "Eccentricity": [
+        0.7357311284129643,
+        0.7924597147345811
+      ],
+      "ConvexArea": [
+        39327.0,
+        54205.0
+      ],
+      "EquivDiameter": [
+        222.6169418524267,
+        260.70443060582556
+      ],
+      "Extent": [
+        0.7336886993603412,
+        0.7785498203819248
+      ],
+      "Solidity": [
+        0.9867811655731378,
+        0.9894140094668477
+      ],
+      "roundness": [
+        0.852619707354102,
+        0.9060297557205124
+      ],
+      "Compactness": [
+        0.778493351604325,
+        0.8213881778423449
+      ],
+      "ShapeFactor1": [
+        0.006276092607082,
+        0.0070169123310796
+      ],
+      "ShapeFactor2": [
+        0.0013309060070532,
+        0.0020085312594821
+      ],
+      "ShapeFactor3": [
+        0.6060518984921353,
+        0.6746785386991676
+      ],
+      "ShapeFactor4": [
+        0.9948487751819431,
+        0.997413187154222
+      ]
+    },
+    "match_fraction": {
+      "Area": 1.0,
+      "Perimeter": 1.0,
+      "MajorAxisLength": 1.0,
+      "MinorAxisLength": 1.0,
+      "AspectRation": 1.0,
+      "Eccentricity": 1.0,
+      "ConvexArea": 1.0,
+      "EquivDiameter": 1.0,
+      "Extent": 1.0,
+      "Solidity": 1.0,
+      "roundness": 1.0,
+      "Compactness": 1.0,
+      "ShapeFactor1": 1.0,
+      "ShapeFactor2": 1.0,
+      "ShapeFactor3": 1.0,
+      "ShapeFactor4": 1.0
+    }
+  },
+  "paired_comparison": {
+    "n": 4085,
+    "full_only_correct": 36,
+    "small_only_correct": 17,
+    "diff_pp": 0.46511627906976744,
+    "paired_wald_ci95_pp": [
+      0.11606218522519371,
+      0.8141703729143412
+    ],
+    "mcnemar_exact_p": 0.012660335802414213
+  },
+  "resampling": {
+    "n": 300,
+    "mean_pct": 83.53969808241534,
+    "std_pp": 0.359317599363824
+  },
+  "within_class_mean_pearson": {
+    "Area/EquivDiameter": 0.9989674604038546,
+    "Area/ConvexArea": 0.9993675735303263,
+    "AspectRation/Eccentricity": 0.9779046578817061
+  },
+  "gaussian_correct_count_change": {
+    "BARBUNYA": 43,
+    "BOMBAY": 68,
+    "CALI": 34,
+    "DERMASON": 0,
+    "HOROZ": 35,
+    "SEKER": -15,
+    "SIRA": 79
+  },
+  "final_saved_result": {
+    "model": "SVC_ENG",
+    "cv_accuracy": 0.9304014123103446,
+    "test_accuracy": 0.9329253365973073
+  },
+  "svc_recheck": {
+    "sklearn": "1.6.1",
+    "cv_folds": [
+      0.9265477439664218,
+      0.9286089238845144,
+      0.9286089238845144,
+      0.9375328083989501,
+      0.9307086614173228
+    ],
+    "cv_mean": 0.9304014123103446,
+    "correct": 3811,
+    "test_accuracy": 0.9329253365973073
+  }
+}
